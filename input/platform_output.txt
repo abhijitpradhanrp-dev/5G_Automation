@@ -1,0 +1,92 @@
+
+[root@E2E-gNB-2 ~]# lscpu
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                28
+On-line CPU(s) list:   0-27
+Thread(s) per core:    2
+Core(s) per socket:    14
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 85
+Model name:            Intel(R) Xeon(R) D-2177NT CPU @ 1.90GHz
+Stepping:              4
+CPU MHz:               1901.000
+CPU max MHz:           1901.0000
+CPU min MHz:           1000.0000
+BogoMIPS:              3800.00
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              1024K
+L3 cache:              19712K
+NUMA node0 CPU(s):     0-27
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 invpcid_single intel_pt ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts pku ospke md_clear spec_ctrl intel_stibp flush_l1d
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]# cat /proc/meminfo
+MemTotal:       131518172 kB
+MemFree:        68142392 kB
+MemAvailable:   95535040 kB
+Buffers:            2280 kB
+Cached:         26380664 kB
+SwapCached:            0 kB
+Active:          2095756 kB
+Inactive:       24413192 kB
+Active(anon):     438012 kB
+Inactive(anon):   256020 kB
+Active(file):    1657744 kB
+Inactive(file): 24157172 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        125748 kB
+Mapped:            78572 kB
+Shmem:            567848 kB
+Slab:            2231192 kB
+SReclaimable:    2138536 kB
+SUnreclaim:        92656 kB
+KernelStack:       11776 kB
+PageTables:         6776 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    50030444 kB
+Committed_AS:     970420 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      719732 kB
+VmallocChunk:   34358820860 kB
+Percpu:            11872 kB
+HardwareCorrupted:     0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:      30
+HugePages_Free:        4
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:    1048576 kB
+DirectMap4k:      249108 kB
+DirectMap2M:    26673152 kB
+DirectMap1G:    109051904 kB
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]# cat /proc/cmdline
+BOOT_IMAGE=/vmlinuz-3.10.0-1127.19.1.rt56.1116.el7.x86_64 root=UUID=ab407b3f-291f-474f-97fc-aa77f9de3d2c ro crashkernel=auto rd.lvm.lv=centos/root rd.lvm.lv=centos/swap rhgb quiet processor.max_cstate=1 intel_idle.max_cstate=0 irqaffinity=0 intel_iommu=off selinux=0 enforcing=0 nmi_watchdog=0 audit=0 mce=off kthread_cpus=0 skew_tick=1 isolcpus=1-13,15-27 intel_pstate=disable nosoftlockup nohz=on nohz_full=1-13,15-27 rcu_nocbs=1-13,15-27 default_hugepagesz=1G hugepagesz=1G hugepages=30
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#
+[root@E2E-gNB-2 ~]#

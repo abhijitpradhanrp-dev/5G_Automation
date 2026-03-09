@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20220120 09:11:03.391" rpa="false" schemaversion="2">
+<suite id="s1" name="Log Parser" source="C:\Users\apradhax\PycharmProjects\log_parser_sneha\Log_Parser\testsuite\log_parser.robot">
+<test id="s1-t1" name="logparser_TC1:lscpu">
+<kw name="search log" library="logparser_keyword">
+<doc>Get the parameter values from the log file.</doc>
+<kw name="Lscpu Log" library="phase_test">
+<status status="PASS" starttime="20220120 09:11:03.471" endtime="20220120 09:11:03.475"/>
+</kw>
+<status status="PASS" starttime="20220120 09:11:03.471" endtime="20220120 09:11:03.475"/>
+</kw>
+<kw name="convert to json" library="logparser_keyword">
+<doc>Convert the captured log file to json file.</doc>
+<kw name="Get Lscpu" library="phase_test">
+<status status="PASS" starttime="20220120 09:11:03.476" endtime="20220120 09:11:03.477"/>
+</kw>
+<status status="PASS" starttime="20220120 09:11:03.476" endtime="20220120 09:11:03.477"/>
+</kw>
+<kw name="print table from static data" library="logparser_keyword">
+<doc>Print the data from the json file in table format.</doc>
+<kw name="Lscpu Table" library="phase_test">
+<msg timestamp="20220120 09:11:03.481" level="INFO">╒═════════════════════╤═════════════════════════════════════════╕
+│ item                │ value                                   │
+╞═════════════════════╪═════════════════════════════════════════╡
+│ Architecture        │ x86_64                                  │
+├─────────────────────┼─────────────────────────────────────────┤
+│ BogoMIPS            │ 3800.00                                 │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Byte Order          │ Little Endian                           │
+├─────────────────────┼─────────────────────────────────────────┤
+│ CPU MHz             │ 1901.000                                │
+├─────────────────────┼─────────────────────────────────────────┤
+│ CPU family          │ 6                                       │
+├─────────────────────┼─────────────────────────────────────────┤
+│ CPU max MHz         │ 1901.0000                               │
+├─────────────────────┼─────────────────────────────────────────┤
+│ CPU min MHz         │ 1000.0000                               │
+├─────────────────────┼─────────────────────────────────────────┤
+│ CPU op-mode(s)      │ 32-bit, 64-bit                          │
+├─────────────────────┼─────────────────────────────────────────┤
+│ CPU(s)              │ 28                                      │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Core(s) per socket  │ 14                                      │
+├─────────────────────┼─────────────────────────────────────────┤
+│ L1d cache           │ 32K                                     │
+├─────────────────────┼─────────────────────────────────────────┤
+│ L1i cache           │ 32K                                     │
+├─────────────────────┼─────────────────────────────────────────┤
+│ L2 cache            │ 1024K                                   │
+├─────────────────────┼─────────────────────────────────────────┤
+│ L3 cache            │ 19712K                                  │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Model               │ 85                                      │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Model name          │ Intel(R) Xeon(R) D-2177NT CPU @ 1.90GHz │
+├─────────────────────┼─────────────────────────────────────────┤
+│ NUMA node(s)        │ 1                                       │
+├─────────────────────┼─────────────────────────────────────────┤
+│ NUMA node0 CPU(s)   │ 0-27                                    │
+├─────────────────────┼─────────────────────────────────────────┤
+│ On-line CPU(s) list │ 0-27                                    │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Socket(s)           │ 1                                       │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Stepping            │ 4                                       │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Thread(s) per core  │ 2                                       │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Vendor ID           │ GenuineIntel                            │
+├─────────────────────┼─────────────────────────────────────────┤
+│ Virtualization      │ VT-x                                    │
+╘═════════════════════╧═════════════════════════════════════════╛</msg>
+<status status="PASS" starttime="20220120 09:11:03.477" endtime="20220120 09:11:03.481"/>
+</kw>
+<status status="PASS" starttime="20220120 09:11:03.477" endtime="20220120 09:11:03.481"/>
+</kw>
+<status status="PASS" starttime="20220120 09:11:03.471" endtime="20220120 09:11:03.482"/>
+</test>
+<doc>Case name: Log Parser tool automation.
+"Author: LTTS"
+*How To execute test case:*
+robot -t "Particular Testcase Name" -d results testsuite/log_parser.robot</doc>
+<status status="PASS" starttime="20220120 09:11:03.393" endtime="20220120 09:11:03.482"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Log Parser">Log Parser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
